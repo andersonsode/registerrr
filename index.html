@@ -7,35 +7,33 @@
 
 </head>
 <body>
-
-    <h1 style="text-align: center;">COLLEGE ENROLLMENT FORM</h1>
-
-    <form action="">
-        <table border="0" align="center" width="100px" cellpading="1px" cellspacing="2px">
+    <h1 style="text-align: center; background-color: antiquewhite;">COLLEGE ENROLLMENT FORM </h1>
+    <form action="" style="background-color: rgba(255, 235, 205, 0.842);">
+        <table border="0" align="center" width="400px" cellpading="5px" cellspacing="5px" >
             <tr>
-                <td><label for="fullName">Full Name*</label></td>
-                <td><input type="text" name="fullName" id="fullName"></td>
+                <td><label for="fullName">First Name*</label></td>
+                <td><input type="text" name="firstName" id="firstName" required></td>
             </tr>
             <tr>
-                <td><label for="middleName">Middle Name</label></td>
-                <td><input type="text" name="middleName" id="middleName"></td>
+                <td><label for="middleName">Middle Name*</label></td>
+                <td><input type="text" name="middleName" id="middleName" required></td>
             </tr>
             <tr>
                 <td><label for="lastName">Last Name*</label></td>
-                <td><input type="text" name="lastName" id="lastName"></td>
+                <td><input type="text" name="lastName" id="lastName" required></td>
             </tr>
 
             <tr>
                 <td><label for="birthday">Birthday*</label></td>
-                <td><input type="date" name="birthday" id="birthday"></td>
+                <td><input type="date" name="birthday" id="birthday" required></td>
             </tr>
             <tr>
                 <td><label for="birthplace">Birthplace*</label></td>
-                <td><input type="text" name="birthplace" id="birthplace"></td>
+                <td><input type="text" name="birthplace" id="birthplace" required></td>
             </tr>
             <tr>
                 <td><label for="age">Age*</label></td>
-                <td><input type="number" name="age" id="age"></td>
+                <td><input type="number" name="age" id="age" required></td>
             </tr>
 
             <tr>
@@ -57,7 +55,8 @@
                         <option value="">BSOA (Business Office Administration)</option>
                         <option value="">ENTREP (Entrepreneurship)</option>
                         <option value="">HM (Hospitality Management)</option>
-                        <option value="">CT (Computer Technology)</option>
+                        <option value="">CT (Computer Technology)</option>  
+                        <option value="">Samahan ni sir JOMAR</option>
                     </select>
                 </td>
             </tr>
@@ -65,6 +64,12 @@
             <tr>
                 <td><label for="citizenship">Citizenship*</label></td>
                 <td><input type="text" name="citizenship" id="citizenship"></td>
+                
+            <tr>
+                <td> <label for="sex">Sex*</label></td>
+                <td><input type="radio" name="gender" id="sex">MALE <input type="radio" name="gender" id="sex">FEMALE</td>
+            </tr>
+            
             </tr>
             <tr>
                 <td><label for="civilStatus">Civil Status*</label></td>
@@ -74,20 +79,28 @@
                         <option value="">Married</option>
                         <option value="">Widowed</option>
                         <option value="">Separated</option>
+                        <option value="">Kabet</option>
+                        <option value="">Second Option</option>
+                        <option value="">Back Burner</option>
                     </select>
                 </td>
             </tr>
 
-            <tr><td><label for="region">Region*</label></td><td><input type="text" id="region"></td></tr>
-            <tr><td><label for="province">Province*</label></td><td><input type="text" id="province"></td></tr>
+            <tr><td><label for="region">Region*</label></td>
+                <td><input type="text" id="region"></td></tr>
+            <tr><td><label for="province">Province*</label></td>
+                <td><input type="text" id="province"></td></tr>
             <tr><td><label for="city">City*</label></td><td><input type="text" id="city"></td></tr>
-            <tr><td><label for="barangay">Barangay*</label></td><td><input type="text" id="barangay"></td></tr>
-            <tr><td><label for="houseNoStreet">House No./Street</label></td><td><input type="text" id="houseNoStreet"></td></tr>
-            <tr><td><label for="contactNo">Contact No.*</label></td><td><input type="text" id="contactNo"></td></tr>
+            <tr><td><label for="barangay">Barangay*</label></td>
+                <td><input type="text" id="barangay"></td></tr>
+            <tr><td><label for="houseNoStreet">House No./Street</label></td>
+                <td><input type="text" id="houseNoStreet"></td></tr>
+            <tr><td><label for="contactNo">Contact No.*</label></td>
+                <td><input type="text" id="contactNo"></td></tr>
 
             <tr>
-                <td colspan="2">
-                    <br><strong>Credentials Submitted*</strong><br>
+                <td colspan="2"> <br>
+                    <label>Credentials Submitted*</label> <br>
                     <input type="checkbox" id="c1"> <label for="c1">Form-138</label> <br>
                     <input type="checkbox" id="c2"> <label for="c2">Form-137</label> <br>
                     <input type="checkbox" id="c3"> <label for="c3">Birth Certificate</label> <br>
